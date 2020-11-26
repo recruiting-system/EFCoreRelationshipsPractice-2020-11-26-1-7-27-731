@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreRelationshipsPractice", "EFCoreRelationshipsPractice\EFCoreRelationshipsPractice.csproj", "{074A5A13-45DB-4FC9-A499-FE4612D1F33E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreRelationshipsPracticeTest", "EFCoreRelationshipsPracticeTest\EFCoreRelationshipsPracticeTest.csproj", "{8C952C3D-9DAB-4198-8F69-DF634A8D0809}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{41742CB0-3004-4C40-B09C-163E48A1FE6D}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{074A5A13-45DB-4FC9-A499-FE4612D1F33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074A5A13-45DB-4FC9-A499-FE4612D1F33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074A5A13-45DB-4FC9-A499-FE4612D1F33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074A5A13-45DB-4FC9-A499-FE4612D1F33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C952C3D-9DAB-4198-8F69-DF634A8D0809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C952C3D-9DAB-4198-8F69-DF634A8D0809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C952C3D-9DAB-4198-8F69-DF634A8D0809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C952C3D-9DAB-4198-8F69-DF634A8D0809}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
