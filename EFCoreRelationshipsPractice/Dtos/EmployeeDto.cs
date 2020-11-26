@@ -1,9 +1,17 @@
-﻿namespace EFCoreRelationshipsPractice.Dtos
+﻿using EFCoreRelationshipsPractice.Entities;
+
+namespace EFCoreRelationshipsPractice.Dtos
 {
     public class EmployeeDto
     {
         public EmployeeDto()
         {
+        }
+
+        public EmployeeDto(EmployeeEntity employeeEntity)
+        {
+            this.Name = employeeEntity.Name;
+            this.Age = employeeEntity.Age;
         }
 
         public string Name { get; set; }

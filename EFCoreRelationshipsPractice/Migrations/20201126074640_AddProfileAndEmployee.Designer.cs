@@ -3,14 +3,16 @@ using System;
 using EFCoreRelationshipsPractice.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFCoreRelationshipsPractice.Migrations
 {
     [DbContext(typeof(CompanyDbContext))]
-    partial class CompanyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201126074640_AddProfileAndEmployee")]
+    partial class AddProfileAndEmployee
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,7 +60,7 @@ namespace EFCoreRelationshipsPractice.Migrations
 
                     b.HasIndex("CompanyEntityId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("EmployeeEntity");
                 });
 
             modelBuilder.Entity("EFCoreRelationshipsPractice.Entities.ProfileEntity", b =>
@@ -75,7 +77,7 @@ namespace EFCoreRelationshipsPractice.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Profiles");
+                    b.ToTable("ProfileEntity");
                 });
 
             modelBuilder.Entity("EFCoreRelationshipsPractice.Entities.CompanyEntity", b =>
