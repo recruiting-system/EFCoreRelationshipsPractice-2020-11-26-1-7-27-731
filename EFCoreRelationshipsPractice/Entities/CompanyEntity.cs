@@ -1,6 +1,7 @@
 ﻿using EFCoreRelationshipsPractice.Dtos;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -41,6 +42,9 @@ namespace EFCoreRelationshipsPractice.Entities
         public int Id { get; set; }
         public int RegisteredCapital { get; set; }
         public string CertId { get; set; }
+        public CompanyEntity Company { get; set; }
+        [ForeignKey("CompanyIdForeignKey")]
+        public int CompanyId { get; set; }
     }
 
     public class EmployeeEntity
@@ -58,5 +62,9 @@ namespace EFCoreRelationshipsPractice.Entities
         public int Id { get; set; }
         public int Age { get; set; }
         public string Name { get; set; }
+
+        public CompanyEntity Company { get; set; }
+        [ForeignKey("CompanyIdForeignKey")]
+        public int CompanyId { get; set; }
     }
 }
